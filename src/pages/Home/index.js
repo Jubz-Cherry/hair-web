@@ -1,8 +1,13 @@
-import './Home.module.css';
+
+import Cabecalho from '../../components/Cabecalho';
 
 function Home(){
+
     return(
-        <h1>Lista de cabelos</h1>
+      <>
+      <Cabecalho />
+   
+      </>
     )
 }
 

@@ -1,0 +1,23 @@
+.cabecalho {
+    width: 99.4%;
+    height: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 4px; 
+    margin: 0 auto;   
+}
+nav {
+    display: flex;
+    gap: 20px;
+    margin-right: 40px; 
+}
+.cabecalho h2 {
+    font-weight: 400;
+    font-size: 18px;
+    justify-content: center;
+    color: white;
+}

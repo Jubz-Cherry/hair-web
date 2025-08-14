@@ -1,0 +1,17 @@
+.capa {
+    width: 99.4%;
+    height: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 4px; 
+    margin: 0 auto;  
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
