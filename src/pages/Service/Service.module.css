@@ -1,10 +1,12 @@
 .cardsWrapper {
   display: flex;
+  justify-content: center;   /* Centraliza os cards horizontalmente */
+  align-items: center;       /* Centraliza verticalmente (se for relevante) */
   gap: 20px;
   max-width: 1000px;
   width: 100%;
   padding: 20px;
-  align-items: center;
+  margin: 0 auto;            /* Centraliza o wrapper na tela */
 }
 
 

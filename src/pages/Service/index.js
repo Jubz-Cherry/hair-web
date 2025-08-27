@@ -7,7 +7,10 @@ import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { Link } from 'react-router-dom';
-
+import cabelos from '../Service/imgServices/cabelos.png';
+import make from '../Service/imgServices/make.png';
+import cilios from '../Service/imgServices/cilios.png';
+import sobrancelha from '../Service/imgServices/sobrancelha.png';
 
 
 function Service(){
@@ -30,18 +33,26 @@ function Service(){
 
   const routesMap = {
   Cabelos: "/servico/cabelos",
-  Maquiagem: "/maquiagem",
-  Cílios: "/cilios",
-  Sobrancelha: "/sobrancelha"
+  Maquiagem: "/servico/maquiagem",
+  Cílios: "/servico/cilios",
+  Sobrancelha: "/servico/sobrancelhas"
 };
 
+const imageMap = {
+  1: cabelos,
+  2: make,
+  3: cilios,
+  4: sobrancelha
+};
 
     return(
     <>
       <Banner/>
         <div className={styles.container}>
-      <Rodape/>
+      <Rodape titulo="Catálogo de serviços"/>
+      <p>
 
+      </p>
      <div className={styles.cardsWrapper}  data-aos="fade-in">
       {services.map(services => (
           <Link 
@@ -51,13 +62,14 @@ function Service(){
             >
               <Card
                 titulo={services.name}
-                image={`http://localhost:3003/imgservices/${services.image}`}
+                image={imageMap[services.id]}
               />
             </Link>
                 
           ))}
         </div>
       </div>
+
     </>
        
     )

@@ -1,0 +1,31 @@
+.footer {
+  background-color: #333;
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  min-height: 200px;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  border-top: 3px solid rgb(0, 0, 0);
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: right; 
+  font-weight: 400;
+  font-size: 18px;
+  justify-content: center;
+  text-align: right;
+  border-top: 1px solid #000000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.imagem {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}

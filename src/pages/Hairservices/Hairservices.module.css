@@ -40,7 +40,8 @@
   max-width: 1000px;
   width: 100%;
   padding: 20px;
-  overflow: visible 
+  overflow: visible;
+  min-height: 300px;
 }
 
 html, body {
@@ -50,3 +51,8 @@ html, body {
   min-height: 200vh;
 }
 
+.linkRodape {
+  text-decoration: none;
+  display: block;
+  margin-top: 30px;
+}

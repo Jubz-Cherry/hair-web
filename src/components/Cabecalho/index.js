@@ -14,12 +14,16 @@ function Cabecalho(){
                 <img src={logo} alt="Logo"/>
             </Link>
             <nav>
-                <CabecalhoLink url="./Agendar">
-                    Agendar Horário
+                <CabecalhoLink url="./marcar">
+                    Marcar Horário
                 </CabecalhoLink>
                 <p/>
                 <CabecalhoLink url="./servicos">
                     Serviços
+                </CabecalhoLink>
+                <p/>
+                <CabecalhoLink url="./Agenda">
+                    Agenda 
                 </CabecalhoLink>
             </nav> 
             

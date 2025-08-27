@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner';
 import Rodape from '../../components/Rodape';
-import style from './Hairservices.module.css';
+import style from './BrowService.module.css';
 import { useEffect, useState } from 'react';
 import Card from '../../components/Card';
 import AOS from 'aos';
@@ -8,14 +8,14 @@ import 'aos/dist/aos.css';
 import Footer from '../../components/Footer';
 import { Link } from 'react-router-dom';
 
-function Hairservices(){
+function BrowService(){
 
-    const [hair, setHair] = useState([]);
+    const [brow, setBrow] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3003/servico/cabelos')
+    fetch('http://localhost:3003/servico/sobrancelhas')
       .then(res => res.json())
-      .then(data => setHair(data))
+      .then(data => setBrow(data))
       .catch(err => console.error(err));
   }, []);
 
@@ -24,23 +24,23 @@ function Hairservices(){
   }, []);
 
     useEffect(() => {
-    if (hair.length > 0) {
+    if (brow.length > 0) {
       AOS.refresh(); 
     }
-  }, [hair]);
+  }, [brow]);
 
     return(
         <>
         <Banner/>
-        <Rodape titulo="Cabelos"/>
+        <Rodape titulo="Sobrancelhas"/>
         <div className={style.loginContainer} >
          
         <div className={style.cardsWrapper}  data-aos="fade-down">
-         {hair.map((hair, index) => (
-            <div key={hair.id} data-aos="fade-up" data-aos-delay={index * 100}>
+         {brow.map((brow, index) => (
+            <div key={brow.id} data-aos="fade-up" data-aos-delay={index * 100}>
               <Card
-                titulo={hair.name}
-                image={hair.image}
+                titulo={brow.name}
+                image={brow.image}
               />
             </div>
           ))}
@@ -55,4 +55,4 @@ function Hairservices(){
     )
 }
 
-export default Hairservices;
+export default BrowService;
