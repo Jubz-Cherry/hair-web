@@ -41,13 +41,11 @@
   width: 100%;
 }
 
-
 .linkRodape {
   text-decoration: none;
   display: block;
   margin-top: 30px;
 }
-
 
 .careSection img {
   width: 100%;
@@ -69,4 +67,38 @@
 .textCare {
   flex: 1 1 300px;
   max-width: 500px;
+}
+
+.reviewBanner {
+  width: 150%;
+  min-height: 350px;
+  background-image: url('./hairr.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  margin: 40px 0;
+}
+
+.reviewContent {
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 30px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+}
+
+.reviewContent h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.reviewContent p {
+  font-size: 16px;
+  font-style: italic;
 }

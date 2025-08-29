@@ -6,6 +6,7 @@ import API from '../../services/API';
 import Rodape from '../../components/Rodape';
 
 function Marcar(){
+
     const navigate = useNavigate();
 
     const [form, setForm] = useState({
@@ -15,7 +16,6 @@ function Marcar(){
     date: "",
     time: "",
   });
-
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -29,7 +29,7 @@ function Marcar(){
       alert(response.data.message);
       navigate("/");
     } catch (error) {
-      alert("Erro ao registrar usuário");
+      alert("Hórario ocupado, por favor escolha outro!");
       console.error(error);
     }
   }
@@ -44,13 +44,13 @@ function Marcar(){
                 
             <input type="text" 
             name="name" 
-            placeholder="Nome da cliente" 
+            placeholder="Nome" 
             onChange={handleChange}/>
 
             <input 
             type="text" 
             name="number" 
-            placeholder="Número da cliente" 
+            placeholder="Número" 
             onChange={handleChange}/>
 
             <input 
@@ -61,8 +61,8 @@ function Marcar(){
 
             <input 
             type="Date" 
-            name="Date" 
-            placeholder="Date"
+            name="date" 
+            placeholder="Data"
             onChange={handleChange}/>
 
             <input 

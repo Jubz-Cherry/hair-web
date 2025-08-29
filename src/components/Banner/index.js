@@ -13,8 +13,8 @@ function Banner() {
                 <img src={logo} alt="Logo"/>
           
             <nav>
-                <CabecalhoLink url="/agendar">
-                    Agendar Horário
+                <CabecalhoLink url="/marcar">
+                    Marcar Horário
                 </CabecalhoLink>
                 <p/>
                 <CabecalhoLink url="/">

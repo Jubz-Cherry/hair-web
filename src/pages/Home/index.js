@@ -9,7 +9,6 @@ import AOS from 'aos';
 import { useEffect } from 'react';
 
 
-
 function Home(){
 
     useEffect(() => {
@@ -49,6 +48,17 @@ function Home(){
              <h3>Deseja fazer algum desses tratamentos? Marque horário!</h3>
           </div>
 
+          <div className={styles.reviewBanner} data-aos="fade-in">
+            <div className={styles.reviewContent}>
+              <h2>"Atendimento excelente, ambiente acolhedor!"</h2>
+              <p>— Maria </p>
+              <h2>"Meu cabelo nunca esteve tão bonito!"</h2>
+              <p>— Joana </p>
+            </div>
+          </div>
+
+
+        
           <div className={styles.widgettitle}>
             <h2>Horário de funcionamento</h2>
             <p>Das terças aos sabádos, apartir das 8h da manhã até as 18h da tarde</p>
